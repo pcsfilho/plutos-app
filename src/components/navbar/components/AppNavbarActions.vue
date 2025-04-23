@@ -1,6 +1,6 @@
 <template>
   <div class="app-navbar-actions">
-    <VaButton
+    <!-- <VaButton
       v-if="!isMobile"
       preset="secondary"
       href="https://ui.vuestic.dev/support/consulting"
@@ -10,8 +10,8 @@
     >
       <VaIcon size="large" class="material-symbols-outlined mr-1">support_agent</VaIcon>
       {{ t('supportAndConsulting') }}
-    </VaButton>
-    <VaButton
+    </VaButton> -->
+    <!-- <VaButton
       v-if="!isMobile"
       preset="secondary"
       href="https://admin.vuestic.dev/"
@@ -20,9 +20,9 @@
       class="app-navbar-actions__item flex-shrink-0 mx-0"
     >
       <VaIcon size="large" class="material-symbols-outlined mr-1">info</VaIcon>
-      {{ t('aboutVuesticAdmin') }}
-    </VaButton>
-    <GithubButton v-if="!isMobile" class="app-navbar-actions__item" />
+      {{ t("aboutVuesticAdmin") }}
+    </VaButton> -->
+    <!-- <GithubButton v-if="!isMobile" class="app-navbar-actions__item" />
     <VaButton
       v-if="!isMobile"
       preset="secondary"
@@ -32,24 +32,26 @@
       class="app-navbar-actions__item flex-shrink-0 mx-0"
     >
       <VaIcon :component="VaIconDiscord" />
-    </VaButton>
-    <NotificationDropdown class="app-navbar-actions__item" />
-    <ProfileDropdown class="app-navbar-actions__item app-navbar-actions__item--profile mr-1" />
+    </VaButton> -->
+    <!-- <NotificationDropdown class="app-navbar-actions__item" /> -->
+    <ProfileDropdown
+      class="app-navbar-actions__item app-navbar-actions__item--profile mr-1"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
-import ProfileDropdown from './dropdowns/ProfileDropdown.vue'
-import NotificationDropdown from './dropdowns/NotificationDropdown.vue'
-import GithubButton from './GitHubButton.vue'
-import VaIconDiscord from '../../icons/VaIconDiscord.vue'
+import ProfileDropdown from "./dropdowns/ProfileDropdown.vue";
+import NotificationDropdown from "./dropdowns/NotificationDropdown.vue";
+import GithubButton from "./GitHubButton.vue";
+import VaIconDiscord from "../../icons/VaIconDiscord.vue";
 
 defineProps({
   isMobile: { type: Boolean, default: false },
-})
+});
 
-import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 </script>
 
 <style lang="scss">

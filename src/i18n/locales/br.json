@@ -46,6 +46,7 @@
       "components": "componentes",
       "teamMembers": "membros da equipe"
     },
+    "supportAndConsulting": "Consulta Vuestic",
     "tabs": {
       "overview": {
         "title": "Visão Geral",
@@ -95,6 +96,7 @@
     "buttons": "Botões",
     "timelines": "Linhas do Tempo",
     "dashboard": "Painel de Controle",
+    "wallets": "Carteiras",
     "billing": "Cobrança",
     "login": "Entrar",
     "signUp": "Cadastrar-se",
